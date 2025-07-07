@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# 🌍 Travel Destination Explorer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An interactive and visually appealing web application that allows users to discover random countries, view curated images, learn about destinations, and maintain a personal travel wishlist. It also features continent-based filtering, dark mode, a country search bar, best time to visit info, and a fun flag-guessing game.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+- 🔀 **Random Destination Discovery** – Get a random country with its flag, images, capital, population, timezones.
+- 🌐 **Region Filter** – Filter your wishlist by continent (Africa, Americas, Asia, Europe, Oceania).
+- 🔍 **Search by Country** – Quickly search and view any country.
+- 🌓 **Dark Mode Toggle** – Switch between light and dark themes.
+- 🗓️ **Best Time to Visit** – Suggested travel seasons for popular destinations.
+- 🖼️ **Image Carousel** – Stunning visuals from Unsplash API.
+- ❤️ **Wishlist** – Add destinations you love and view them later.
+- 💾 **Persistent Storage** – Wishlist stored in localStorage.
+- 🎮 **Mini Travel Quiz** – Guess the country by flag in a fun game format.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Tech Stack
 
-### `npm test`
+- **Frontend**: React.js
+- **APIs**:
+  - [REST Countries API](https://restcountries.com/)
+  - [Unsplash API](https://unsplash.com/developers)
+- **State Management**: React Hooks
+- **Styling**: Custom CSS with light/dark themes
+- **Persistence**: LocalStorage
+- **Libraries**: Axios, React Responsive Carousel
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📦 Installation & Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 1. Clone the Repository
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/JinalKay/Travel-app.git
+cd Travel-app
+2. Install Dependencies
+bash
+Copy
+Edit
+npm install
+3. Create a .env file in the root directory:
+bash
+Copy
+Edit
+REACT_APP_UNSPLASH_KEY=your_unsplash_access_key_here
+Get your Unsplash Access Key from: https://unsplash.com/developers
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Run the App
+bash
+Copy
+Edit
+npm start
+The app will launch at http://localhost:3000.
 
-### `npm run eject`
+📁 Folder Structure
+pgsql
+Copy
+Edit
+src/
+├── components/
+│   ├── DestinationCard.js
+│   ├── Wishlist.js
+│   └── Game.js
+├── App.js
+├── index.js
+├── index.css
+├── .env
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+📌 Future Improvements
+🌍 Support for more detailed country info (languages, currency, maps)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+📲 Mobile-friendly animations and gestures
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+🧠 New game modes (e.g., capital guessing, population ranges)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+🌐 Multilingual support
 
-## Learn More
+🔐 Optional login for wishlist sync
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+👩‍💻 Author
+Made with 💙 by Jinal Kapadiya
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
